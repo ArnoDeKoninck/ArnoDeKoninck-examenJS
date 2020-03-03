@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-woord-vervangen</title>
+    <script src="08-woord-vervangen_app.js"></script>
+    <style>*{
+        font-family: Arial, Helvetica, sans-serif;
+    } .width{
+        margin: 15px auto 15px auto;
+        width:80%;
+    } input, button{
+        margin-bottom: 15px;
+    }
+    p{
+        display:inline
+    }
+    </style>
+  <body>
+      <h1>Vervang het woord</h1>
+      <h3>Zin:</h3>
+      <input type="text" id="sentence"class="width"placeholder="JavaScript rocks!"><br>
+      <p>Zoek dit woord: </p><input type="text" id ="word"placeholder="Word"><br>
+      <p>Dit woord komt in de plaats: </p><input type="text"id="newWord" placeholder="New Word"><br>
+      <button onclick="vervangWoord()" >Vervang</button><br>
+      <p>De nieuwe zin: </p><br>
+      <input type="text" id="output"class="width"placeholder="New Output">
+  </body>
+</html>

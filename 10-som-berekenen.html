@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10-som-berekenen</title>
+    <script src="10-som-berekenen_app.js"></script>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #output {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Getallen berekenen</h1>
+    <p>
+      Geef een getal op in het onderstaande veld en kies "Voeg toe". Je kan
+      meerdere getallen toevoegen. Als je gedaan hebt, kies je "bereken".
+    </p>
+    <p>Getal:</p>
+    <input id="input" type="text" /><button onclick="voegToe()">Voeg Toe</button
+    ><button onclick="bereken()">Bereken</button>
+    <h2>Berekening</h2>
+    <input type="text" id="output" />
+  </body>
+</html>

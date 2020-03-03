@@ -35,6 +35,7 @@ let input = prompt(
 ).toUpperCase();
 let result = 0;
 document.write("<h1>Scrabbel punten berekenaar</h1>");
+document.write("<br>Het woord is: " + input);
 input = input.split("");
 if (input !== null) {
   //checks cancel
@@ -47,9 +48,6 @@ if (input !== null) {
             "<br>" + alfabet[j] + " - " + alfabetScore[j] + "<br>"
           );
           result += parseInt(alfabetScore[j]);
-        } else {
-          alert("U mag alleen letters van het alfabet gebruiken!"); //If content is not in alphabet alerts and cancels
-          break;
         }
       }
     }
